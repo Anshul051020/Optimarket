@@ -201,7 +201,7 @@ st.markdown(
     "-webkit-background-clip:text; -webkit-text-fill-color:transparent;"
     "font-size:2.6rem; margin-bottom:4px;'>OptiMarket</h1>"
     "<p style='text-align:center; color:#94a3b8; font-size:1.05rem; margin-top:0;'>"
-    "Autonomous Portfolio Agent · Powered by LangGraph &amp; Gemini</p>",
+    "Autonomous Portfolio Agent</p>",
     unsafe_allow_html=True,
 )
 
@@ -603,4 +603,5 @@ if st.button("🔄  Reset Portfolio", use_container_width=True):
     if "historical_yields" in st.session_state:
         del st.session_state["historical_yields"]
     st.success("Portfolio restored to defaults.")
+
     st.rerun()
